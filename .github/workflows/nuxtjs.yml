@@ -59,6 +59,12 @@ jobs:
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Set env variables
+        run: |
+          echo "BASE_URL=${{ steps.deployment.outputs.page_url }}" >> .env
+          echo "COOKIE_DOMAIN=${{ steps.deployment.outputs.page_url }}" >> .env
+          echo "LOCALISE_API_KEY=${{ secrets.LOCALISE_API_KEY }}" >> .env
+          cat .env
       - name: Static HTML export with Nuxt
         run: pnpm  -r --parallel generate
       - name: Upload artifact
