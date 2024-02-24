@@ -27,6 +27,7 @@ concurrency:
 jobs:
   test-log:
     runs-on: ubuntu-latest
+    environment: production
     steps:
       - name: Check vars
         run: echo "${{ toJson(vars) }}"
