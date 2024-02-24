@@ -4,9 +4,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "nuxi build",
+    "build": "nuxi build --dotenv ../../.env",
     "dev": "nuxi dev --dotenv ../../.env",
-    "generate": "nuxi generate",
+    "generate": "nuxi generate --dotenv ../../.env",
     "preview": "nuxi preview",
     "prepare": "nuxi prepare",
     "typecheck": "nuxi typecheck",

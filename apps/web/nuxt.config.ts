@@ -1,3 +1,4 @@
+import path from 'path';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -5,6 +6,11 @@ export default defineNuxtConfig({
   devServer: {
     port: 4004,
     host: '0.0.0.0',
+  },
+  nitro: {
+    output: {
+      publicDir: path.join(__dirname, '../../dist'),
+    },
   },
 
   // PACKAGES

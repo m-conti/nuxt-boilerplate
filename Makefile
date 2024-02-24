@@ -19,6 +19,15 @@ fclean: clean
 
 all: fclean install
 
+# PRODUCTION RULES
+pre-build-prod:
+	pnpm install --frozen-lockfile
+
+build: pre-build-prod # SSR
+	pnpm --filter=web generate
+
+generate:
+	bash -l -c '. $(HOME)/.nvm/nvm.sh && nvm exec ${NVM_VERSION} pnpm -r --parallel generate'
 
 # DEVELOPMENT RULES
 prepare:
