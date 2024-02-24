@@ -25,6 +25,15 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check vars
+        run: echo "${{ toJson(vars) }}"
+      - name: Check env
+        run: echo "${{ toJson(env) }}"
+      - name: Check secrets
+        run: echo "${{ toJson(secrets) }}"
   # Build job
   build:
     runs-on: ubuntu-latest
