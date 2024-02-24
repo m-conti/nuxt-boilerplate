@@ -26,7 +26,7 @@ pre-build-prod:
 build-web: pre-build-prod # SSR
 	pnpm --filter=web generate
 
-generate:
+generate: prepare
 	bash -l -c '. $(HOME)/.nvm/nvm.sh && nvm exec ${NVM_VERSION} pnpm -r --parallel generate'
 
 # DEVELOPMENT RULES
