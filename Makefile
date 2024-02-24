@@ -23,10 +23,11 @@ all: fclean install
 pre-build-prod:
 	pnpm install --frozen-lockfile
 
-build-web: pre-build-prod # SSR
+build-web: pre-build-prod
+	pnpm --filter=shared fetch-langs
 	pnpm --filter=web generate
 
-generate: prepare
+generate:
 	bash -l -c '. $(HOME)/.nvm/nvm.sh && nvm exec ${NVM_VERSION} pnpm -r --parallel generate'
 
 # DEVELOPMENT RULES

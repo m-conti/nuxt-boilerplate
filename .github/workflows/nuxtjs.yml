@@ -63,10 +63,8 @@ jobs:
           echo "COOKIE_DOMAIN=${{ vars.COOKIE_DOMAIN }}" >> .env
           echo "LOCALIZE_API_KEY=${{ secrets.LOCALIZE_API_KEY }}" >> .env
           echo "BASE_URL=${{ vars.BASE_URL }}" >> .env
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-      - name: Static HTML export with Nuxt
-        run: make generate
+      - name: Generate static site
+        run: build-web
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
