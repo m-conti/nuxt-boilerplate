@@ -61,14 +61,14 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Set env variables
         run: |
-          echo "COOKIE_DOMAIN=$COOKIE_DOMAIN" >> .env
-          echo "LOCALIZE_API_KEY=$LOCALIZE_API_KEY" >> .env
-          echo "BASE_URL=$BASE_URL" >> .env
+          echo "COOKIE_DOMAIN=${{ env.COOKIE_DOMAIN }}" >> .env
+          echo "LOCALIZE_API_KEY=${{ env.LOCALIZE_API_KEY }}" >> .env
+          echo "BASE_URL=${{ env.BASE_URL }}" >> .env
           cat .env
         env:
           LOCALIZE_API_KEY: ${{ secrets.LOCALIZE_API_KEY }}
-          BASE_URL: ${{ env.BASE_URL }}
-          COOKIE_DOMAIN: ${{ env.COOKIE_DOMAIN }}
+          BASE_URL: ${{ vars.BASE_URL }}
+          COOKIE_DOMAIN: ${{ vars.COOKIE_DOMAIN }}
       - name: Static HTML export with Nuxt
         run: pnpm  -r --parallel generate
       - name: Upload artifact
