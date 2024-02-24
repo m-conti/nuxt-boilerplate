@@ -25,19 +25,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  test-log:
-    runs-on: ubuntu-latest
-    environment: github-pages
-    steps:
-      - name: Check vars
-        run: echo "${{ toJson(vars) }}"
-      - name: Check env
-        run: echo "${{ toJson(env) }}"
-      - name: Check secrets
-        run: echo "${{ toJson(secrets) }}"
   # Build job
   build:
     runs-on: ubuntu-latest
+    environment: github-pages
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -79,9 +70,9 @@ jobs:
           echo "BASE_URL=${{ vars.BASE_URL }}" >> .env
           cat .env
         env:
-          localizeApiKey: localizeApiKeyValue
-          baseUrl: baseUrlValue
-          cookieDomain: cookieDomainValue
+          localizeApiKey: ${{ secrets.LOCALIZE_API_KEY }}
+          baseUrl: ${{ vars.BASE_URL }}
+          cookieDomain: ${{ vars.COOKIE_DOMAIN }}
       - name: Static HTML export with Nuxt
         run: pnpm  -r --parallel generate
       - name: Upload artifact
