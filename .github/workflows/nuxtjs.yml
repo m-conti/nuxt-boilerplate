@@ -64,7 +64,7 @@ jobs:
           echo "LOCALIZE_API_KEY=${{ secrets.LOCALIZE_API_KEY }}" >> .env
           echo "BASE_URL=${{ vars.BASE_URL }}" >> .env
       - name: Generate static site
-        run: build-web
+        run: make build-web
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
