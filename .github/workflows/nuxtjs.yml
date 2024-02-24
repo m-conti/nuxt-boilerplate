@@ -67,8 +67,8 @@ jobs:
           cat .env
         env:
           LOCALIZE_API_KEY: ${{ secrets.LOCALIZE_API_KEY }}
-          BASE_URL: ${{ vars.BASE_URL }}
-          COOKIE_DOMAIN: ${{ vars.COOKIE_DOMAIN }}
+          BASE_URL: ${{ env.BASE_URL }}
+          COOKIE_DOMAIN: ${{ env.COOKIE_DOMAIN }}
       - name: Static HTML export with Nuxt
         run: pnpm  -r --parallel generate
       - name: Upload artifact
