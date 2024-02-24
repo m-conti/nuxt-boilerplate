@@ -40,12 +40,6 @@ jobs:
         uses: pnpm/action-setup@v3
         with:
           version: 8
-      - name: Detect package manager
-        id: detect-package-manager
-        run: |
-          echo "manager=pnpm" >> $GITHUB_OUTPUT
-          echo "command=generate" >> $GITHUB_OUTPUT
-          exit 0
       - name: Setup Pages
         uses: actions/configure-pages@v4
         with:
@@ -64,9 +58,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }} --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: Static HTML export with Nuxt
-        run: ${{ steps.detect-package-manager.outputs.manager }} generate
+        run: pnpm  -r --parallel generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
