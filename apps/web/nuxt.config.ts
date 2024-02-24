@@ -1,7 +1,5 @@
 import path from 'path';
 
-console.log('ENVIRONMENT');
-console.log(process.env.BASE_URL);
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // DEV
@@ -14,8 +12,8 @@ export default defineNuxtConfig({
       publicDir: path.join(__dirname, '../../dist'),
     },
   },
-  vite: {
-    base: process.env.BASE_URL,
+  app: {
+    baseURL: process.env.BASE_URL,
   },
 
   // PACKAGES
