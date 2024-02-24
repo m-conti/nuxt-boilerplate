@@ -1,0 +1,4 @@
+.app-quality-rule-no-transition * {
+  transition: none !important;
+  transition-duration: 0s !important;
+}

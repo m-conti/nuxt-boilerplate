@@ -1,0 +1,27 @@
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+
+  & > .page-main {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    @add-mixin font-body;
+    @add-mixin bg-color $gray-1000;
+    @add-mixin text-color $white;
+
+    & > .page {
+      z-index: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    & br {
+      @add-mixin bg-theme-color $gray-300, $gray-700;
+    }
+
+  }
+}

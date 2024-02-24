@@ -1,0 +1,11 @@
+@define-mixin animated $duration: 200ms {
+  transition-duration: $duration;
+}
+
+/* NOT WORKING WITH POSTCSS_CALC (FIND A WAY) ! */
+@define-mixin animated-ruled $duration {
+  @add-mixin preset-low { @add-mixin animated 0; }
+  @add-mixin preset-lowest { @add-mixin animated 0; }
+  @add-mixin preset-medium { @add-mixin animated calc(1.5 * $duration); }
+  @add-mixin preset-high { @add-mixin animated calc(1.2 * $duration); }
+}

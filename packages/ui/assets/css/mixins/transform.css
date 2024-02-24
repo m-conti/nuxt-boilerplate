@@ -1,0 +1,11 @@
+@define-mixin scale $value {
+  transform: scale($(value));
+}
+
+@define-mixin scale-ruled $value {
+  @add-mixin rule-scale { @add-mixin scale $(value); }
+}
+
+@define-mixin scale-ruled-3d $x, $y, $z: 1 {
+  @add-mixin rule-scale { transform: scale3d($(x), $(y), $(z)); }
+}

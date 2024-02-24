@@ -1,0 +1,5 @@
+@define-mixin env $value {
+  .environment-$(value) &:not(.no-app-env) { @mixin-content; }
+
+  &.no-app-env.environment-$(value) { @mixin-content; }
+}

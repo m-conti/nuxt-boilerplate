@@ -1,0 +1,26 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev --dotenv ../../.env",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "prepare": "nuxi prepare",
+    "typecheck": "nuxi typecheck",
+    "analyze": "nuxi analyze",
+    "force-upgrade": "nuxi upgrade --force"
+  },
+  "peerDependencies": {
+    "eslint-config-shared": "workspace:*",
+    "models": "workspace:*",
+    "shared": "workspace:*",
+    "stylelint-config-shared": "workspace:*",
+    "ui": "workspace:*",
+    "utils": "workspace:*"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

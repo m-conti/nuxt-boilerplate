@@ -1,0 +1,8 @@
+/* stylelint-disable media-feature-name-no-unknown */
+/* stylelint-disable media-query-no-invalid */
+
+@define-mixin media $value {
+  @media $media-query-$(value) {
+    @mixin-content;
+  }
+}

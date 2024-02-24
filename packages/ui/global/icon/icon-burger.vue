@@ -1,0 +1,30 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="14"
+    viewBox="0 0 24 14"
+    fill="none"
+  >
+    <rect
+      width="24"
+      height="2"
+      rx="1"
+      fill="#16181E"
+    />
+    <rect
+      y="6"
+      width="24"
+      height="2"
+      rx="1"
+      fill="#16181E"
+    />
+    <rect
+      y="12"
+      width="24"
+      height="2"
+      rx="1"
+      fill="#16181E"
+    />
+  </svg>
+</template>

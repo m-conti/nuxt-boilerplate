@@ -1,0 +1,11 @@
+@define-mixin shadow-highlight {
+  box-shadow: 8px 2px 32px 0 rgb(18 61 101 / 35%), -8px -8px 20px 0 rgb(104 116 159 / 25%);
+}
+
+@define-mixin shadow-icon {
+  box-shadow: 0 2px 4px rgb(12 14 17 / 25%);
+}
+
+@define-mixin shadow-highlight-ruled {
+  @add-mixin rule-shadow { @add-mixin shadow-highlight; }
+}

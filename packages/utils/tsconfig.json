@@ -1,0 +1,30 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "include": ["./**/*", "./node_modules/@types/**/*"],
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "skipLibCheck": false,
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "strict": true,
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "types": [],
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "lib": [ "ESNext", "DOM" ],
+    "paths": {
+      "tests": ["./src/tests"],
+      "~/*": ["./src/*"],
+      "~": ["./src"],
+    },
+  }
+}

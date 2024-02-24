@@ -1,0 +1,49 @@
+@define-mixin preset-low {
+  .app-quality-low & {
+    @mixin-content;
+  }
+}
+
+@define-mixin preset-lowest {
+  .app-quality-lowest & {
+    @mixin-content;
+  }
+}
+
+@define-mixin preset-medium {
+  .app-quality-medium & {
+    @mixin-content;
+  }
+}
+
+@define-mixin preset-high {
+  .app-quality-high & {
+    @mixin-content;
+  }
+}
+
+
+@define-mixin rule-shadow {
+  .app-quality-rule-shadow & {
+    @mixin-content;
+  }
+}
+
+@define-mixin rule-opacity {
+  .app-quality-rule-opacity & {
+    @mixin-content;
+  }
+}
+
+@define-mixin rule-scale {
+  .app-quality-rule-scale & {
+    @mixin-content;
+  }
+}
+
+@define-mixin rule-rounded {
+  .app-quality-rule-rounded & {
+    @mixin-content;
+  }
+}
+

@@ -1,0 +1,7 @@
+@define-mixin rounded $value: 9999px {
+  border-radius: $(value);
+}
+
+@define-mixin rounded-ruled $value: 9999px {
+  @add-mixin rule-rounded { @add-mixin rounded $(value); }
+}

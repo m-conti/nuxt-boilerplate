@@ -1,0 +1,90 @@
+/* stylelint-disable selector-type-no-unknown */
+
+/* BASE */
+
+/* @define-mixin theme-light { & .theme-light { @mixin-content; } } */
+@define-mixin theme-light { @mixin-content; }
+@define-mixin theme-dark { .theme-dark & { @mixin-content; } }
+
+/* BACKGROUND */
+
+@define-mixin bg-theme-light $color, $opacity: 1 { @add-mixin theme-light { @add-mixin bg-color $(color), $(opacity); } }
+@define-mixin bg-theme-dark $color, $opacity: 1 { @add-mixin theme-dark { @add-mixin bg-color $(color), $(opacity); } }
+
+@define-mixin bg-theme-color $color-light, $color-dark, $opacity: 1 {
+  @add-mixin bg-theme-light $(color-light), $(opacity);
+  @add-mixin bg-theme-dark $(color-dark), $(opacity);
+}
+
+@define-mixin bg-current-theme-color $color-light, $color-dark, $opacity: 1 {
+  @add-mixin theme-light { @add-mixin bg-current $(color-light), $(opacity); }
+  @add-mixin theme-dark { @add-mixin bg-current $(color-dark), $(opacity); }
+}
+
+
+/* BORDER */
+
+@define-mixin border-theme-light $color, $opacity: 1 { @add-mixin theme-light { @add-mixin border-color $(color), $(opacity); } }
+@define-mixin border-theme-dark $color, $opacity: 1 { @add-mixin theme-dark { @add-mixin border-color $(color), $(opacity); } }
+
+@define-mixin border-theme-color $color-light, $color-dark, $opacity: 1 {
+  @add-mixin border-theme-light $(color-light), $(opacity);
+  @add-mixin border-theme-dark $(color-dark), $(opacity);
+}
+
+@define-mixin border-current-theme-color $color-light, $color-dark, $opacity: 1 {
+  @add-mixin theme-light { @add-mixin border-current $(color-light), $(opacity); }
+  @add-mixin theme-dark { @add-mixin border-current $(color-dark), $(opacity); }
+}
+
+/* INNER_BORDER */
+
+@define-mixin inner-border-theme-light $color, $size: 1px, $opacity: 1 {
+  @add-mixin theme-light { @add-mixin inner-border-color $(color), $(size), $(opacity); }
+}
+@define-mixin inner-border-theme-dark $color, $size: 1px, $opacity: 1 {
+  @add-mixin theme-dark { @add-mixin inner-border-color $(color), $(size), $(opacity); }
+}
+
+@define-mixin inner-border-theme-color $color-light, $color-dark, $size: 1px, $opacity: 1 {
+  @add-mixin inner-border-theme-light $(color-light), $(size), $(opacity);
+  @add-mixin inner-border-theme-dark $(color-dark), $(size), $(opacity);
+}
+
+@define-mixin inner-border-current-theme-color $color-light, $color-dark, $size: 1px {
+  @add-mixin theme-light { @add-mixin inner-border-current $(color-light), $(size); }
+  @add-mixin theme-dark { @add-mixin inner-border-current $(color-dark), $(size); }
+}
+
+
+/* TEXT */
+
+@define-mixin text-theme-light $color, $opacity: 1 { @add-mixin theme-light { @add-mixin text-color $(color), $(opacity); } }
+@define-mixin text-theme-dark $color, $opacity: 1 { @add-mixin theme-dark { @add-mixin text-color $(color), $(opacity); } }
+
+@define-mixin text-theme-color $color-light, $color-dark, $opacity: 1 {
+  @add-mixin text-theme-light $(color-light), $(opacity);
+  @add-mixin text-theme-dark $(color-dark), $(opacity);
+}
+
+@define-mixin text-current-theme-color $color-light, $color-dark, $opacity: 1 {
+  @add-mixin theme-light { @add-mixin text-current $(color-light), $(opacity); }
+  @add-mixin theme-dark { @add-mixin text-current $(color-dark), $(opacity); }
+}
+
+
+/* STROKE */
+
+@define-mixin stroke-theme-light $color, $opacity: 1 { @add-mixin theme-light { @add-mixin stroke-color $(color), $(opacity); } }
+@define-mixin stroke-theme-dark $color, $opacity: 1 { @add-mixin theme-dark { @add-mixin stroke-color $(color), $(opacity); } }
+
+@define-mixin stroke-theme-color $color-light, $color-dark, $opacity: 1 {
+  @add-mixin stroke-theme-light $(color-light), $(opacity);
+  @add-mixin stroke-theme-dark $(color-dark), $(opacity);
+}
+
+@define-mixin stroke-current-theme-color $color-light, $color-dark, $opacity: 1 {
+  @add-mixin theme-light { @add-mixin stroke-current $(color-light), $(opacity); }
+  @add-mixin theme-dark { @add-mixin stroke-current $(color-dark), $(opacity); }
+}
+

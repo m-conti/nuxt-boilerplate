@@ -1,0 +1,24 @@
+/* stylelint-disable max-line-length */
+@define-mixin bg-gradient $direction, $from, $percent: 50%, $to: transparent {
+  background: linear-gradient($(direction), $(from), $(percent), $(to) 100%);
+}
+
+@define-mixin bg-reflect $color: #FFF0 {
+  background: $gradient-reflect, $(color);
+}
+
+@define-mixin bg-gradient-rainbow { background: linear-gradient(90deg, #FF8C00 5.73%, #F80032 31.25%, #FF00A0 50%, #8C28FF 68.75%, #0023FF 84.37%, #19A0FF 96.87%); }
+@define-mixin bg-gradient-pink { background: linear-gradient(90deg, #FF00A5 0%, #6E00FF 100%); }
+@define-mixin bg-gradient-blue { background: linear-gradient(90deg, #0072C9 0%, #6E00FF 75.32%); }
+
+@define-mixin text-gradient-rainbow {
+  background: linear-gradient(90deg, #FF7800 8.33%, #F80032 29.17%, #FF00A0 42.19%, #8C28FF 64.58%, #0023FF 81.77%, #1798FF 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@define-mixin bg-current-gradient {
+  @add-mixin bg-gradient-rainbow;
+  @add-mixin env pink { @add-mixin bg-gradient-pink; }
+  @add-mixin env blue { @add-mixin bg-gradient-blue; }
+}

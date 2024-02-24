@@ -1,0 +1,15 @@
+export { default as assert } from './methods/assert';
+export { default as map } from './methods/map';
+export { default as reduce } from './methods/reduce';
+export { default as size } from './methods/size';
+export { default as filter } from './methods/filter';
+export { default as find } from './methods/find';
+export { default as flatpath } from './methods/flatpath';
+export { default as each } from './methods/each';
+export { default as omit } from './methods/omit';
+export { default as pick } from './methods/pick';
+export { default as clone } from './methods/clone';
+export { default as query } from './methods/query';
+export { default as merge } from './methods/merge';
+export { default as defaults } from './methods/defaults';
+export { default as to } from './methods/to';

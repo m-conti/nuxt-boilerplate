@@ -1,0 +1,7 @@
+/* Scale REM units with a ratio of 1.5 for UHD screens */
+@media screen and (width >= 1920px) {
+  :root {
+    /* stylelint-disable-next-line declaration-property-unit-allowed-list */
+    font-size: 150%;
+  }
+}

@@ -1,0 +1,113 @@
+@define-mixin text-color $color, $opacity: 1 {
+  color: rgba($(color), $(opacity));
+}
+
+@define-mixin bg-color $color, $opacity: 1 {
+  background-color: rgba($(color), $(opacity));
+}
+
+@define-mixin border-color $color, $opacity: 1 {
+  border-color: rgba($(color), $(opacity));
+}
+
+@define-mixin stroke-color $color, $opacity: 1 {
+  stroke: rgba($(color), $(opacity));
+}
+
+@define-mixin inner-border-color $color, $size: 1px, $opacity: 1 {
+  box-shadow: inset 0 0 0 $(size) rgba($(color), $(opacity));
+}
+
+@define-mixin text-current $color, $opacity: 1 {
+  @add-mixin env pink { @add-mixin text-color $pink-$(color), $(opacity); }
+  @add-mixin env blue { @add-mixin text-color $blue-$(color), $(opacity); }
+  @add-mixin env green { @add-mixin text-color $green-$(color), $(opacity); }
+  @add-mixin env yellow { @add-mixin text-color $yellow-$(color), $(opacity); }
+  @add-mixin env red { @add-mixin text-color $red-$(color), $(opacity); }
+}
+
+@define-mixin bg-current $color, $opacity: 1 {
+  @add-mixin env pink { @add-mixin bg-color $pink-$(color), $(opacity); }
+  @add-mixin env blue { @add-mixin bg-color $blue-$(color), $(opacity); }
+  @add-mixin env green { @add-mixin bg-color $green-$(color), $(opacity); }
+  @add-mixin env yellow { @add-mixin bg-color $yellow-$(color), $(opacity); }
+  @add-mixin env red { @add-mixin bg-color $red-$(color), $(opacity); }
+}
+
+@define-mixin border-current $color, $opacity: 1 {
+  @add-mixin env pink { @add-mixin border-color $pink-$(color), $(opacity); }
+  @add-mixin env blue { @add-mixin border-color $blue-$(color), $(opacity); }
+  @add-mixin env green { @add-mixin border-color $green-$(color), $(opacity); }
+  @add-mixin env yellow { @add-mixin border-color $yellow-$(color), $(opacity); }
+  @add-mixin env red { @add-mixin border-color $red-$(color), $(opacity); }
+}
+
+@define-mixin stroke-current $color, $opacity: 1 {
+  @add-mixin env pink { @add-mixin stroke-color $pink-$(color), $(opacity); }
+  @add-mixin env blue { @add-mixin stroke-color $blue-$(color), $(opacity); }
+  @add-mixin env green { @add-mixin stroke-color $green-$(color), $(opacity); }
+  @add-mixin env yellow { @add-mixin stroke-color $yellow-$(color), $(opacity); }
+  @add-mixin env red { @add-mixin stroke-color $red-$(color), $(opacity); }
+}
+
+@define-mixin inner-border-current $color, $size: 1px, $opacity: 1 {
+  @add-mixin env pink { @add-mixin inner-border-color $pink-$(color), $(size), $(opacity); }
+  @add-mixin env blue { @add-mixin inner-border-color $blue-$(color), $(size), $(opacity); }
+  @add-mixin env green { @add-mixin inner-border-color $green-$(color), $(size), $(opacity); }
+  @add-mixin env yellow { @add-mixin inner-border-color $yellow-$(color), $(size), $(opacity); }
+  @add-mixin env red { @add-mixin inner-border-color $red-$(color), $(size), $(opacity); }
+}
+
+/*
+**        WITH QUALITY RULE (to remove rule on bad quality device)
+*/
+
+@define-mixin bg-color-ruled $color, $opacity: 1 {
+  @add-mixin rule-opacity { @add-mixin bg-color $(color), $(opacity); }
+  @add-mixin bg-color $(color);
+}
+
+@define-mixin border-color-ruled $color, $opacity: 1 {
+  @add-mixin rule-opacity { @add-mixin border-color $(color), $(opacity); }
+  @add-mixin border-color $(color);
+}
+
+@define-mixin stroke-color-ruled $color, $opacity: 1 {
+  @add-mixin rule-opacity { @add-mixin stroke-color $(color), $(opacity); }
+  @add-mixin stroke-color $(color);
+}
+
+@define-mixin inner-border-color-ruled $color, $size: 1px, $opacity: 1 {
+  @add-mixin rule-opacity { @add-mixin inner-border-color $(color), $(size), $(opacity); }
+  @add-mixin inner-border-color $(color), $(size);
+}
+
+@define-mixin text-color-ruled $color, $opacity: 1 {
+  @add-mixin rule-opacity { @add-mixin text-color $(color), $(opacity); }
+  @add-mixin text-color $(color);
+}
+
+@define-mixin text-current-ruled $color, $opacity: 1 {
+  @add-mixin rule-opacity { @add-mixin text-current $(color), $(opacity); }
+  @add-mixin text-current $(color);
+}
+
+@define-mixin bg-current-ruled $color, $opacity: 1 {
+  @add-mixin rule-opacity { @add-mixin bg-current $(color), $(opacity); }
+  @add-mixin bg-current $(color);
+}
+
+@define-mixin border-current-ruled $color, $opacity: 1 {
+  @add-mixin rule-opacity { @add-mixin border-current $(color), $(opacity); }
+  @add-mixin border-current $(color);
+}
+
+@define-mixin stroke-current-ruled $color, $opacity: 1 {
+  @add-mixin rule-opacity { @add-mixin stroke-current $(color), $(opacity); }
+  @add-mixin stroke-current $(color);
+}
+
+@define-mixin inner-border-current-ruled $color, $size: 1px, $opacity: 1 {
+  @add-mixin rule-opacity { @add-mixin inner-border-current $(color), $(size), $(opacity); }
+  @add-mixin inner-border-current $(color), $(size);
+}
