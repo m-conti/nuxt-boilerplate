@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     },
   },
   vite: {
-    base: process.env.BASE_URL,
+    base: './',
   },
 
   // PACKAGES
