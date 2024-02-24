@@ -1,6 +1,6 @@
 const initApp = async () => {
 
-  if (!await deviceInitialized.value)
+  if (!await new Promise((resolve) => { resolve(true); }))
     return false;
 
   return true;

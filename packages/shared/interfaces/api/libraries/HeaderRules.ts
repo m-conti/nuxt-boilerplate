@@ -20,7 +20,7 @@ export const buildHeader = async (rule: HeaderRules): Promise<Record<string, str
   if (!(rule.all || (rule as HeaderRulesWithoutAll).accept?.length)) return {};
 
   if (rule.await)
-    await deviceInitialized.value;
+    await appInitialized.value;
 
   const headers = makeHeaders(rule);
 
