@@ -12,9 +12,6 @@ export default defineNuxtConfig({
       publicDir: path.join(__dirname, '../../dist'),
     },
   },
-  app: {
-    baseURL: process.env.BASE_URL,
-  },
 
   // PACKAGES
   extends: ['shared/nuxt.config'],
