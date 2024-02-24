@@ -1,7 +1,7 @@
 import path from 'path';
 
 console.log('ENVIRONMENT');
-console.log(process.env);
+console.log(process.env.BASE_URL);
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // DEV
