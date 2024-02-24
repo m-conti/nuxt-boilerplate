@@ -23,7 +23,7 @@ all: fclean install
 pre-build-prod:
 	pnpm install --frozen-lockfile
 
-build: pre-build-prod # SSR
+build-web: pre-build-prod # SSR
 	pnpm --filter=web generate
 
 generate:
@@ -39,3 +39,6 @@ dev: prepare
 
 dev-ui: prepare
 	bash -l -c '. $(HOME)/.nvm/nvm.sh && nvm exec ${NVM_VERSION} pnpm --filter=ui dev'
+
+dev-web: prepare
+	bash -l -c '. $(HOME)/.nvm/nvm.sh && nvm exec ${NVM_VERSION} pnpm --filter=web dev'
