@@ -61,9 +61,9 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Set env variables
         run: |
-          echo "COOKIE_DOMAIN=${{ env.cookieDomain }}" >> .env
-          echo "LOCALIZE_API_KEY=${{ env.localizeApiKey }}" >> .env
-          echo "BASE_URL=${{ env.baseUrl }}" >> .env
+          echo "COOKIE_DOMAIN=$cookieDomain" >> .env
+          echo "LOCALIZE_API_KEY=$localizeApiKey" >> .env
+          echo "BASE_URL=$baseUrl" >> .env
           cat .env
         env:
           localizeApiKey: ${{ secrets.LOCALIZE_API_KEY }}
