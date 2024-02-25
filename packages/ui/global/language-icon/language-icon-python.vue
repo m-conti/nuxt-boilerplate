@@ -2,9 +2,7 @@
   <svg
     id="svg2"
     version="1.0"
-    sodipodi:version="0.32"
     inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-    sodipodi:docname="python-logo-only.svg"
     width="92.070236pt"
     height="101.00108pt"
     viewBox="0 0 114 114"

@@ -13,7 +13,7 @@
   }
 
   &:disabled.btn, &.disabled.btn {
-    @add-mixin text-theme-color $gray-300, $gray-600, 1;
+    @add-mixin text-theme-color $grey-300, $grey-600, 1;
   }
 
   &:hover:not(:disabled, .disabled), &.hover:not(:disabled, .disabled) {

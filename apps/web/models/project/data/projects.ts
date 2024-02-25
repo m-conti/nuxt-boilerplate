@@ -7,7 +7,14 @@ export const PROJECTS: Project[] = [
     id: 1,
     name: 'Sky STV application',
     description: 'Sky STV application',
-    images: [ 'Sky/STV/01.png', 'Sky/STV/02.png', 'Sky/STV/03.png', 'Sky/STV/04.png', 'Sky/STV/05.png' ],
+    cover: '/images/company/Sky/STV/00.png',
+    images: [
+      '/images/company/Sky/STV/01.png',
+      '/images/company/Sky/STV/02.png',
+      '/images/company/Sky/STV/03.png',
+      '/images/company/Sky/STV/04.png',
+      '/images/company/Sky/STV/05.png',
+    ],
     languages: [
       LANGUAGES.Nuxt,
       LANGUAGES.Vue,
@@ -20,7 +27,12 @@ export const PROJECTS: Project[] = [
     id: 2,
     name: 'Office Riders',
     description: 'Office Riders client application',
-    images: [ 'OfficeRiders/01.png', 'OfficeRiders/02.png', 'OfficeRiders/03.png', 'OfficeRiders/04.png', 'OfficeRiders/05.png' ],
+    cover: '/images/company/OfficeRiders/00.png',
+    images: [
+      '/images/company/OfficeRiders/01.jpeg',
+      '/images/company/OfficeRiders/02.jpeg',
+      '/images/company/OfficeRiders/03.jpeg',
+    ],
     languages: [
       LANGUAGES.React,
       LANGUAGES.MongoDB,

@@ -23,8 +23,8 @@
 
   &:disabled.btn, &.disabled.btn {
     box-shadow: none;
-    @add-mixin bg-color $gray-600;
-    @add-mixin text-color $gray-300;
+    @add-mixin bg-color $grey-600;
+    @add-mixin text-color $grey-300;
   }
 
   &:hover:not(:disabled, .disabled), &.hover:not(:disabled, .disabled) {

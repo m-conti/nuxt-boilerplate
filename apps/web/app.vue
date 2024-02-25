@@ -12,10 +12,11 @@
 </template>
 
 <script lang="ts" setup>
-const { environment } = storeToRefs(useDisplayStore());
+const { environment, theme } = storeToRefs(useDisplayStore());
 useSeoHydration();
 
 const classes = computed(() => [
   `environment-${environment.value}`,
+  `theme-${theme.value}`,
 ]);
 </script>

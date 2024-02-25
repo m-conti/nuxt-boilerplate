@@ -3,7 +3,7 @@
   & p, & a, & li {
     @add-mixin font-body;
     font-size: $text-md;
-    @add-mixin text-theme-color $gray-900, $gray-100;
+    @add-mixin text-theme-color $grey-900, $grey-100;
   }
 
   & h1 {

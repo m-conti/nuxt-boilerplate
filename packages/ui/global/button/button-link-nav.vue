@@ -6,7 +6,7 @@
 
 <style scoped lang="postcss">
 .btn-link-nav {
-  @add-mixin text-theme-color $gray-900, $gray-50;
+  @add-mixin text-theme-color $grey-900, $grey-50;
 
   &.selected {
     border-bottom: solid .1rem;
@@ -15,7 +15,7 @@
   }
 
   &:disabled, &.disabled {
-    @add-mixin text-theme-color $gray-300, $gray-600;
+    @add-mixin text-theme-color $grey-300, $grey-600;
   }
 
   &:hover:not(:disabled, .disabled), &.hover:not(:disabled, .disabled) {

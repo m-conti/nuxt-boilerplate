@@ -25,7 +25,6 @@
 <script setup lang="ts">
 import { EndPointLib, type EndPoint } from 'shared/interfaces/api';
 import { manyToArray, isString } from 'utils';
-import type { Url } from 'models/domains/network';
 import type { InOutTransition } from '#build/components';
 
 const emit = defineEmits<{
@@ -34,8 +33,8 @@ const emit = defineEmits<{
 }>();
 
 const props = withDefaults(defineProps<{
-  source: Many<Url | EndPoint>;
-  fallback?: Many<Url | EndPoint>;
+  source: Many<string | EndPoint>;
+  fallback?: Many<string | EndPoint>;
   alt: string;
   duration?: false | InstanceType<typeof InOutTransition>['$props']['duration'];
 }>(), {

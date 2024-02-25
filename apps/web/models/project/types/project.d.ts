@@ -1,4 +1,5 @@
 import { Url } from 'models/domains/network';
+import type { GlobalComponentNameLanguageIcon } from 'ui/types/components';
 
 export {};
 
@@ -6,7 +7,7 @@ declare module '~/models/project' {
   interface StackLanguage {
     name: string;
     version?: string;
-    logo: string;
+    logo: GlobalComponentNameLanguageIcon;
     image?: string;
     description?: string;
   }
@@ -21,6 +22,7 @@ declare module '~/models/project' {
     id: number;
     name: string;
     description?: string;
+    cover?: string;
     images: string[];
     languages: StackLanguage[];
     company?: Company;

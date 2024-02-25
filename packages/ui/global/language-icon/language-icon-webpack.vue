@@ -13,43 +13,8 @@
     sodipodi:docname="Webpack.svg"
     inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
   >
-    <metadata
-      id="metadata62"
-    >
-      <rdf:RDF>
-        <cc:Work
-          rdf:about=""
-        >
-          <dc:format>image/svg+xml</dc:format>
-          <dc:type
-            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
-          />
-        </cc:Work>
-      </rdf:RDF>
-    </metadata>
     <defs
       id="defs60"
-    />
-    <sodipodi:namedview
-      id="namedview58"
-      pagecolor="#ffffff"
-      bordercolor="#666666"
-      borderopacity="1"
-      objecttolerance="10"
-      gridtolerance="10"
-      guidetolerance="10"
-      inkscape:pageopacity="0"
-      inkscape:pageshadow="2"
-      inkscape:window-width="1366"
-      inkscape:window-height="745"
-      showgrid="false"
-      inkscape:zoom="0.18815252"
-      inkscape:cx="2328.4012"
-      inkscape:cy="431.22766"
-      inkscape:window-x="-8"
-      inkscape:window-y="-8"
-      inkscape:window-maximized="1"
-      inkscape:current-layer="svg56"
     />
     <title
       id="title46"

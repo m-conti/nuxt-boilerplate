@@ -8,30 +8,13 @@
       <media desktop server><button-icon variant="primary" @click="() => setLocale('de')">de</button-icon></media>
     </div>
     <div class="container">
-      <language-icon :variant="'aws'" />
-      <language-icon :variant="'shell'" />
-      <language-icon :variant="'bitmovin'" />
-      <language-icon :variant="'css'" />
-      <language-icon :variant="'django'" />
-      <language-icon :variant="'googlecloud'" />
-      <language-icon :variant="'javascript'" />
-      <language-icon :variant="'mongodb'" />
-      <language-icon :variant="'node'" />
-      <language-icon :variant="'nuxt'" />
-      <language-icon :variant="'postcss'" />
-      <language-icon :variant="'postgresql'" />
-      <language-icon :variant="'python'" />
-      <language-icon :variant="'react'" />
-      <language-icon :variant="'swift'" />
-      <language-icon :variant="'typescript'" />
-      <language-icon :variant="'vue'" />
-      <language-icon :variant="'wasm'" />
-      <language-icon :variant="'webpack'" />
+      <project-tile v-for="project in PROJECTS" :key="project.id" :data="project" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { PROJECTS } from '~/models/project';
 
 withDefaults(defineProps<{
 
@@ -51,10 +34,6 @@ const { setLocale } = useLocales();
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @add-mixin media mobile { background-color: red !important; }
-  @add-mixin media tablet { background-color: blue !important; }
-  @add-mixin media desktop { background-color: green !important; }
 }
 
 .container {
