@@ -1,5 +1,5 @@
 <template>
-  <component :is="component" class="icon" :class="variant" />
+  <component :is="component" class="language-icon" :class="variant" />
 </template>
 
 <script setup lang="ts">
@@ -13,11 +13,7 @@ const component = computed(() => resolveComponent(`language-icon-${props.variant
 </script>
 
 <style lang="postcss" scoped>
-.icon {
-  fill: currentcolor;
+.language-icon {
 
-  & path, & rect, & g {
-    fill: currentcolor;
-  }
 }
 </style>

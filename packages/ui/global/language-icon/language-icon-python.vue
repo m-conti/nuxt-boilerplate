@@ -7,6 +7,7 @@
     sodipodi:docname="python-logo-only.svg"
     width="92.070236pt"
     height="101.00108pt"
+    viewBox="0 0 114 114"
     inkscape:export-filename="python-logo-only.png"
     inkscape:export-xdpi="232.44"
     inkscape:export-ydpi="232.44"

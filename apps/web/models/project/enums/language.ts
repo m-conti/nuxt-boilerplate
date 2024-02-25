@@ -1,0 +1,21 @@
+
+export enum ELanguage {
+  JavaScript = 'JavaScript',
+  TypeScript = 'TypeScript',
+  Django = 'Django',
+  GoogleCloud = 'GoogleCloud',
+  AWS = 'AWS',
+  MongoDB = 'MongoDB',
+  NodeJS = 'NodeJS',
+  React = 'React',
+  TailwindCSS = 'TailwindCSS',
+  Vue = 'Vue',
+  Webpack = 'Webpack',
+  Nuxt = 'Nuxt',
+  CSS = 'CSS',
+  Python = 'Python',
+  Swift = 'Swift',
+  Shell = 'Shell',
+  PostGreSQL = 'PostGreSQL',
+  WebAssembly = 'WebAssembly',
+}

@@ -6,6 +6,7 @@
     version="1.1"
     width="260"
     height="90"
+    viewBox="0 0 260 90"
   >
     <defs
       id="defs2950"
