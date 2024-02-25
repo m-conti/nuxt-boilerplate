@@ -99,11 +99,11 @@ const image = computed(() => props.data.images[0]);
         height: 1rem;
 
         &-enter-active, &-leave-active {
-          transition: all 0.8s ease-out;
+          transition: all 0.8s ease-in-out;
         }
 
         &-enter-from, &-leave-to {
-          transform: translateX(24rem);
+          transform: translateX(24rem) scaleX(2.5) skew(-45deg);
         }
 
         &-enter-to, &-leave-from {
