@@ -14,7 +14,7 @@
               v-show="delayedOver"
               :key="language.name"
               :variant="language.logo"
-              :style="{ 'transition-delay': `0.${index * 2}s` }"
+              :style="{ 'transition-delay': `${index}00ms` }"
             />
           </transition-group>
         </div>
@@ -69,8 +69,8 @@ const image = computed(() => props.data.images[0]);
   justify-content: flex-end;
   contain: content;
 
-  width: 16rem;
-  height: 10rem;
+  width: 24rem;
+  height: 15rem;
 
   @add-mixin rounded 0.5rem;
 
@@ -103,7 +103,7 @@ const image = computed(() => props.data.images[0]);
         }
 
         &-enter-from, &-leave-to {
-          transform: translateX(16rem);
+          transform: translateX(24rem);
         }
 
         &-enter-to, &-leave-from {
@@ -133,10 +133,7 @@ const image = computed(() => props.data.images[0]);
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-    &-enter-active, &-leave-active {
-      transition: opacity 0.3s ease-in-out 0.1s;
-    }
+    transition: all 0.3s ease-in-out 0.3s;
 
     &-enter-from, &-leave-to {
       opacity: 0;

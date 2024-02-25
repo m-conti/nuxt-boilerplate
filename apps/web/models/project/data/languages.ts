@@ -93,4 +93,14 @@ export const LANGUAGES: Record<ELanguage, StackLanguage> = {
     logo: 'wasm',
     description: 'WebAssembly description',
   },
+  [ELanguage.Bitmovin]: {
+    name: 'Bitmovin',
+    logo: 'bitmovin',
+    description: 'Bitmovin description',
+  },
+  [ELanguage.PostCSS]: {
+    name: 'PostCSS',
+    logo: 'postcss',
+    description: 'PostCSS description',
+  },
 };

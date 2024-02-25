@@ -33,13 +33,13 @@ export default defineNuxtConfig({
   // HTML
   app: {
     pageTransition: {
-      mode: 'in-out',
+      mode: 'out-in',
       name: 'page',
       type: 'transition',
       duration: 200,
     },
     layoutTransition: {
-      mode: 'in-out',
+      mode: 'out-in',
       name: 'layout',
       type: 'transition',
       duration: 200,

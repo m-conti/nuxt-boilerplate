@@ -9,6 +9,8 @@ export enum ELanguage {
   NodeJS = 'NodeJS',
   React = 'React',
   TailwindCSS = 'TailwindCSS',
+  PostCSS = 'PostCSS',
+  Bitmovin = 'Bitmovin',
   Vue = 'Vue',
   Webpack = 'Webpack',
   Nuxt = 'Nuxt',

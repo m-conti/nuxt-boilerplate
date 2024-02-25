@@ -18,6 +18,12 @@ export const PROJECTS: Project[] = [
     languages: [
       LANGUAGES.Nuxt,
       LANGUAGES.Vue,
+      LANGUAGES.TypeScript,
+      LANGUAGES.Bitmovin,
+      LANGUAGES.Shell,
+      LANGUAGES.AWS,
+      LANGUAGES.PostCSS,
+      LANGUAGES.TailwindCSS,
     ],
     company: COMPANIES.SkyCH,
     start: new Date('2021-08-06'),
