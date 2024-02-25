@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <h1>TEST WEB</h1>
-    <button-icon to="show" disabled variant="primary">{{ $t('test.text') }}</button-icon>
+    <button-icon to="debug" disabled variant="primary">{{ $t('test.text') }}</button-icon>
     <div class="container">
       <media mobile><button-icon variant="primary" @click="() => setLocale('fr')">fr</button-icon></media>
       <media tablet><button-icon variant="primary" @click="() => setLocale('en')">en</button-icon></media>
