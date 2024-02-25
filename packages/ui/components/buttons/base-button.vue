@@ -1,6 +1,7 @@
 <template>
   <component
     :is="is"
+    v-active-on-click
     class="btn"
     :class="classes"
     :to="to ? localePath(to as any) : undefined"

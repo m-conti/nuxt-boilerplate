@@ -1,19 +1,20 @@
-
+import type Plugins from 'shared/plugins/plugins';
+import type Directives from 'shared/directives/directives';
 export {};
 
-interface PluginsInjections {
-
-}
-
 declare module '#app' {
-  interface NuxtApp extends PluginsInjections {}
+  interface NuxtApp extends Plugins.Injections {}
 }
 
+declare module 'nuxt/dist/app/nuxt' {
+  interface NuxtApp extends Plugins.Injections {}
+}
 
 declare module '@vue/runtime-core' {
-  interface ComponentCustomProperties extends PluginsInjections {}
+  interface ComponentCustomProperties extends Plugins.Injections, Directives.Injections {}
 }
 
 declare module 'vue' {
-  interface ComponentCustomProperties extends PluginsInjections {}
+  interface ComponentCustomProperties extends Plugins.Injections, Directives.Injections {}
 }
+

@@ -10,6 +10,12 @@ const props = withDefaults(defineProps<{
   variant?: GlobalComponentNameButton;
 } & ButtonProps>(), {
   variant: 'primary',
+  environment: undefined,
+  icon: undefined,
+  to: undefined,
+  selected: false,
+  disabled: false,
+  animated: true,
 });
 
 const component = computed(() => resolveComponent(`button-${props.variant}`));
