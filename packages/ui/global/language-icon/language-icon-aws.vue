@@ -10,10 +10,6 @@
     style="enable-background: new 0 0 304 182;"
     xml:space="preserve"
   >
-    <style type="text/css">
-      .st0 { fill: #252F3E; }
-      .st1 { fill-rule: evenodd;clip-rule: evenodd;fill: #F90; }
-    </style>
     <g>
       <path
         class="st0"
@@ -54,3 +50,13 @@
     </g>
   </svg>
 </template>
+
+<style scoped>
+.st0 { fill: #252F3E; }
+
+.st1 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #F90;
+}
+</style>

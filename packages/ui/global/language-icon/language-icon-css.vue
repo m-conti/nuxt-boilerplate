@@ -11,47 +11,6 @@
     viewBox="0 0 362.73401 511.99998"
     version="1.1"
   >
-    <defs
-      id="defs3478"
-    />
-    <sodipodi:namedview
-      id="base"
-      pagecolor="#ffffff"
-      bordercolor="#666666"
-      borderopacity="1.0"
-      inkscape:pageopacity="0.0"
-      inkscape:pageshadow="2"
-      inkscape:zoom="0.35"
-      inkscape:cx="181.367"
-      inkscape:cy="256"
-      inkscape:document-units="px"
-      inkscape:current-layer="layer1"
-      showgrid="false"
-      fit-margin-top="0"
-      fit-margin-left="0"
-      fit-margin-right="0"
-      fit-margin-bottom="0"
-      inkscape:window-width="1366"
-      inkscape:window-height="704"
-      inkscape:window-x="0"
-      inkscape:window-y="27"
-      inkscape:window-maximized="1"
-    />
-    <metadata
-      id="metadata3481"
-    >
-      <rdf:RDF>
-        <cc:Work
-          rdf:about=""
-        >
-          <dc:format>image/svg+xml</dc:format>
-          <dc:type
-            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
-          />
-          <dc:title />
-        </cc:Work>
-      </rdf:RDF>
-    </metadata>
     <g
       id="layer1"
       inkscape:label="Calque 1"

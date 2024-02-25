@@ -12,7 +12,7 @@ const props = defineProps<{
 const component = computed(() => resolveComponent(`language-icon-${props.variant}`));
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .icon {
   fill: currentcolor;
 
