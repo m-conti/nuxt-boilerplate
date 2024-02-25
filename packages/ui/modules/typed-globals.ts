@@ -1,7 +1,7 @@
 import { readdirSync, statSync } from 'fs';
 import { join } from 'path';
 import { defineNuxtModule, addTypeTemplate } from '@nuxt/kit';
-import { upperFirst } from 'lodash-es';
+import { upperFirst, camelCase } from 'lodash-es';
 
 interface ComponentList {
   name: string;
@@ -25,7 +25,7 @@ const getGlobalComponentList = () => {
 };
 
 const listToTypescriptType = (list: ComponentList) => (
-  `  type GlobalComponentName${upperFirst(list.name)} = ${list.components.map((component) => `'${component}'`).join(' | ')};`
+  `  type GlobalComponentName${upperFirst(camelCase(list.name))} = ${list.components.map((component) => `'${component}'`).join(' | ')};`
 );
 
 const typescriptTypesToExport = (types: string) => `
