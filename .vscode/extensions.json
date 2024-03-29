@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "cpylua.language-postcss",
+    "csstools.postcss",
+    "stylelint.vscode-stylelint",
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "misterj.vue-volar-extention-pack"
+  ]
+}

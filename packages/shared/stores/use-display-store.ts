@@ -4,8 +4,8 @@ import { timeConvert } from 'utils';
 import { ENVIRONMENTS, THEMES, ETheme } from 'models/domains/theme';
 
 export const useDisplayStore = defineStore('display-store', () => {
-  const environment = useServerConsistentState(ECookieKey.THEME_ENV, () => ENVIRONMENTS.asfirst(), { maxAge: timeConvert(1, 'year') });
-  const theme = useServerConsistentState(ECookieKey.THEME_COLOR, () => THEMES.asfirst(), { maxAge: timeConvert(1, 'year') });
+  const environment = useConsistentState(ECookieKey.THEME_ENV, () => ENVIRONMENTS.asfirst());
+  const theme = useConsistentState(ECookieKey.THEME_COLOR, () => THEMES.asfirst());
   const isDarkTheme = computed(() => theme.value === ETheme.DARK);
 
   const switchTheme = () => {

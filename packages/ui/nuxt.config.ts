@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
     'shared/modules/build-env.ts',
-    '@storybook-vue/nuxt-storybook',
+    '@nuxtjs/storybook',
   ],
   storybook: {
     url: 'http://localhost:6006',

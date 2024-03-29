@@ -1,0 +1,68 @@
+{
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "postcss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": [
+    "css",
+    "postcss",
+    "vue"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
+  "typescript.preferences.importModuleSpecifier": "shortest",
+  "cSpell.words": [
+    "autodocs",
+    "BKSP",
+    "composables",
+    "customizer",
+    "destringify",
+    "dtgo",
+    "flatpath",
+    "getorset",
+    "imageapi",
+    "linebreak",
+    "livestats",
+    "marketingemail",
+    "maxage",
+    "middlewares",
+    "nocheck",
+    "nuxt",
+    "nuxtjs",
+    "ofetch",
+    "postcss",
+    "qrcode",
+    "reco",
+    "Registery",
+    "shortpress",
+    "sidepanel",
+    "signin",
+    "sportlivestats",
+    "stylelint",
+    "univers",
+    "wallee",
+    "watchtracking"
+  ],
+  "cSpell.ignoreRegExpList": [
+    "\\.as[a-z]*(\\(|<)"
+  ],
+  "cSpell.ignorePaths": [
+    "package-lock.json",
+    "node_modules",
+    "vscode-extension",
+    ".git/objects",
+    ".vscode",
+    ".vscode-insiders",
+    "*/*-config-shared"
+  ],
+}

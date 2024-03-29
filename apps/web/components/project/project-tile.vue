@@ -78,6 +78,7 @@ const image = computed(() => props.data.images[0]);
   transform: scale(0.95);
 
   &:hover {
+    height: 20.5rem;
     transform: scale(1.05);
     @add-mixin shadow-highlight;
   }
@@ -85,6 +86,7 @@ const image = computed(() => props.data.images[0]);
   & > .details {
     display: flex;
     flex-direction: column;
+
     padding: 1rem;
     width: 100%;
     @add-mixin bg-theme-color $grey-100, $grey-900;
@@ -113,8 +115,7 @@ const image = computed(() => props.data.images[0]);
     }
 
     &-enter-active, &-leave-active {
-      transition: all 0.3s ease-in-out 0.2s;
-
+      transition: all 0.5s ease-in-out;
     }
 
     &-enter-from, &-leave-to {
@@ -122,7 +123,7 @@ const image = computed(() => props.data.images[0]);
     }
 
     &-enter-to, &-leave-from {
-
+      transform: translateY(0);
     }
   }
 
@@ -131,7 +132,7 @@ const image = computed(() => props.data.images[0]);
     position: absolute;
     inset: 0;
     width: 100%;
-    height: 100%;
+    height: 15rem;
     object-fit: cover;
     transition: all 0.3s ease-in-out 0.3s;
 

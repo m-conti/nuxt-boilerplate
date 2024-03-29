@@ -1,6 +1,5 @@
 import type { StorybookConfig } from '@storybook/vue3-vite';
 
-
 const config: StorybookConfig = {
   stories: [
     '../components/**/*.stories.@(js|tsx|ts|tsx)',

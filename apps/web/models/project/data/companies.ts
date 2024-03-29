@@ -8,4 +8,9 @@ export const COMPANIES: Record<ECompany, Company> = {
     logo: 'sky',
     link: 'https://www.sky.ch/',
   },
+  [ECompany.OfficeRiders]: {
+    name: 'Office Riders',
+    logo: 'officeriders',
+    link: 'https://www.officeriders.com/',
+  },
 };
