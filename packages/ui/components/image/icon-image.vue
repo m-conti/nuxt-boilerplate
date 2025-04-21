@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Url } from 'models/domains/network';
+import type { Url } from 'models/interfaces/network';
 import type { EndPoint } from 'shared/interfaces/api';
 import type { GlobalComponentNameIcon } from 'ui/types/components';
 

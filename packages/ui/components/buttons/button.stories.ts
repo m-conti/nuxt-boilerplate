@@ -15,7 +15,7 @@ import ButtonGhost from '../../global/button/button-ghost.vue';
 import ButtonCircled from '../../global/button/button-circled.vue';
 
 import IconPlay from '../../global/icon/icon-play.vue';
-import { ENVIRONMENTS } from '../../../models/domains/theme';
+import { ENVIRONMENTS } from '../../../models/interfaces/theme';
 import BaseButton from './base-button.vue';
 
 export default {

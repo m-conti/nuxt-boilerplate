@@ -1,4 +1,4 @@
-import { Url } from 'models/domains/network';
+import { Url } from 'models/interfaces/network';
 import type { GlobalComponentNameLanguageIcon } from 'ui/types/components';
 
 export {};

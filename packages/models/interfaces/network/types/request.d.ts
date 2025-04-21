@@ -1,6 +1,6 @@
 
 export {};
 
-declare module 'models/domains/network' {
+declare module 'models/interfaces/network' {
   type Url = `https://${string}`;
 }

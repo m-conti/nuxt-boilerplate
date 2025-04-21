@@ -8,7 +8,13 @@
       <button-icon variant="primary" @click="() => setLocale('de')">de</button-icon>
     </div>
     <div class="container">
-      <project-tile v-for="project in PROJECTS" :key="project.id" :data="project" />
+      <carousel-swipe :item-visibility="3" :items="PROJECTS">
+        <template #default="{ items }">
+          <swiper-slide v-for="(project, index) in items" :key="project.id" :virtual-index="index">
+            <project-tile :key="project.id" :data="project" />
+          </swiper-slide>
+        </template>
+      </carousel-swipe>
     </div>
   </div>
 </template>

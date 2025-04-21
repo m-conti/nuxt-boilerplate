@@ -1,3 +1,5 @@
+import { some } from 'utils/src/libraries/Check';
+
 const isProd = process.env.NODE_ENV === 'production';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -14,8 +16,8 @@ export default defineNuxtConfig({
   ],
   plugins: [
     'shared/directives/active-on-click.ts',
+    'ui/plugins/swiper.ts',
   ],
-
 
   // DIRECTORY NAME
   components: [
@@ -43,6 +45,11 @@ export default defineNuxtConfig({
       name: 'layout',
       type: 'transition',
       duration: 200,
+    },
+  },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => some<string[]>(['swiper'], (exclude: string) => tag.includes(exclude)),
     },
   },
 

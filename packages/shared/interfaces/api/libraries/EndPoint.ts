@@ -1,5 +1,5 @@
 import { EHttpMethod, defaults, stringify, toQueryParams } from 'utils';
-import type { Url } from 'models/domains/network';
+import type { Url } from 'models/interfaces/network';
 import { baseUrls } from '../data/BaseUrls';
 import { DEFAULT_HEADER_RULE, buildHeader } from './HeaderRules';
 import type { BaseUrl, EndPoint, HeaderRules } from 'shared/interfaces/api';

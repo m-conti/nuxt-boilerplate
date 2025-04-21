@@ -1,4 +1,4 @@
-import type { Locale } from 'models/domains/locale';
+import type { Locale } from 'models/interfaces/locale';
 import type { RoutesNamedLocations, RoutesNamesList } from '@typed-router/__routes';
 
 

@@ -3,4 +3,5 @@ export {
   round,
   ceil,
   floor,
+  inRange,
 } from 'lodash-es';

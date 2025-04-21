@@ -47,7 +47,9 @@ module.exports = {
     'property-no-unknown': true,
     'selector-pseudo-element-no-unknown': true,
     'selector-type-no-unknown': [true, {
-      ignoreTypes: []
+      ignoreTypes: [
+        'swiper-container',
+      ]
     }],
     'unit-no-unknown': true,
     'at-rule-no-vendor-prefix': true,

@@ -1,4 +1,4 @@
-import type { Url } from 'models/domains/network';
+import type { Url } from 'models/interfaces/network';
 
 export {};
 

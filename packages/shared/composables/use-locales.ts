@@ -1,4 +1,4 @@
-import type { Locale } from 'models/domains/locale';
+import type { Locale } from 'models/interfaces/locale';
 
 
 interface UseLocalesReturn {
