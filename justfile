@@ -8,3 +8,16 @@ clean:
 
 install:
   pnpm install
+
+dev target="":
+  #!/usr/bin/env bash
+  valid_targets="{{APPLICATION_NAMES}}"
+  if [ -n "{{target}}" ]; then
+    if [[ ! " $valid_targets " =~ " {{target}} " ]]; then
+      echo "Error: Invalid target '{{target}}'. Valid targets: $valid_targets"
+      exit 1
+    fi
+    pnpm --filter={{target}} dev
+  else
+    pnpm -r --parallel dev
+  fi

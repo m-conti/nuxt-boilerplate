@@ -4,3 +4,9 @@ node_modules/
 # Env
 envs/.*.env
 envs/.env
+
+# Nuxt
+.nuxt
+
+# Misc
+.DS_Store
