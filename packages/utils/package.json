@@ -8,5 +8,8 @@
   "packageManager": "pnpm@10.12.1",
   "dependencies": {
     "es-toolkit": "^1.44.0"
+  },
+  "peerDependencies": {
+    "eslint-config": "workspace:*"
   }
 }
