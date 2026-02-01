@@ -5,6 +5,10 @@
   "type": "module",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
   "dependencies": {
     "es-toolkit": "^1.44.0"
   },

@@ -21,3 +21,14 @@ dev target="":
   else
     pnpm -r --parallel dev
   fi
+
+lint param="":
+  #!/usr/bin/env bash
+  case "{{param}}" in
+    fix)
+      pnpm -r --parallel lint:fix
+      ;;
+    *)
+      pnpm -r --parallel lint
+      ;;
+  esac

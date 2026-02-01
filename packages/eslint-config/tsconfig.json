@@ -1,5 +1,4 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
   "include": ["./**/*"],
   "compilerOptions": {
     "forceConsistentCasingInFileNames": true,
@@ -24,7 +23,7 @@
     "paths": {
       "tests": ["./tests"],
       "~/*": ["./*"],
-      "~": ["./"],
-    },
+      "~": ["./"]
+    }
   }
 }
