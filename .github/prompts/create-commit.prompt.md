@@ -28,4 +28,4 @@ agent: agent
 - If changes are self-explanatory from the name, keep it extremely brief or omit description
 - A new subject, a new line
 
-4. Stage all changes and commit with the generated message
+4. commit staged without add new change with the generated message

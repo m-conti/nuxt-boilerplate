@@ -74,6 +74,10 @@ importers:
       eslint-config:
         specifier: workspace:*
         version: link:../eslint
+    devDependencies:
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
 
   packages/utils:
     dependencies:

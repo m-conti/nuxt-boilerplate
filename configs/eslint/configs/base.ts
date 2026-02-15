@@ -1,7 +1,7 @@
 import type { Linter } from 'eslint';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-import type { ESLintRules } from 'eslint/lib/types/rules';
+import type { ESLintRules } from 'eslint/rules';
 import js from '@eslint/js';
 
 const baseRules: Linter.RulesRecord = {

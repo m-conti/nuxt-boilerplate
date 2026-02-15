@@ -6,12 +6,9 @@
     "typescript-config/strict"
   ],
   "compilerOptions": {
-    "jsx": "preserve",
-    "jsxImportSource": "vue",
-    "moduleResolution": "Node",
-    "skipLibCheck": false,
-    "types": [],
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "rootDir": ".",
+    "outDir": "./dist"
   },
   "include": ["./**/*"]
 }

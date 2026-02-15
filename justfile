@@ -6,6 +6,9 @@ default:
 clean:
   find . -type d -name node_modules -prune -exec rm -rf {} \;
 
+# 
+# Development
+# 
 install:
   pnpm install
 
@@ -22,13 +25,22 @@ dev target="":
     pnpm -r --parallel dev
   fi
 
-lint param="":
+
+# 
+# Linting and Type Checking
+# 
+
+[arg("fix", long="fix", short="f", value="true")]
+lint fix="false":
   #!/usr/bin/env bash
-  case "{{param}}" in
-    fix)
+  if [ "{{fix}}" = "true" ]; then
       pnpm -r --parallel lint:fix
-      ;;
-    *)
+  else
       pnpm -r --parallel lint
-      ;;
-  esac
+  fi
+
+typecheck:
+  pnpm -r --parallel typecheck
+
+[arg("fix", long="fix", short="f", value="true")]
+check fix="false": (lint fix) typecheck

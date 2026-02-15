@@ -20,7 +20,8 @@
     "skipLibCheck": true
   },
   "exclude": [
-    "**/node_modules"
+    "**/node_modules",
+    "dist"
   ],
   "paths": {
     "tests": ["./tests"],

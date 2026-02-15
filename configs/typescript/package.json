@@ -16,6 +16,9 @@
     "tsconfig.main.json",
     "configs/*.jsonc"
   ],
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
   "peerDependencies": {
     "eslint-config": "workspace:*"
   }

@@ -4,9 +4,11 @@
   "type": "module",
   "private": true,
   "main": "./eslint.config.mts",
+  "types": "./types/index.d.ts",
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@eslint/css": "^0.14.1",

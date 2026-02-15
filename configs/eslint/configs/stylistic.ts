@@ -1,5 +1,5 @@
 import { Linter } from 'eslint';
-import stylistic, { StyleRules } from '@stylistic/eslint-plugin';
+import stylistic, { type StyleRules } from '@stylistic/eslint-plugin';
 
 const stylisticRules: Linter.RulesRecord = {
   '@stylistic/array-bracket-spacing': ['error', 'never'],
