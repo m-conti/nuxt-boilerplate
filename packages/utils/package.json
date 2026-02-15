@@ -9,10 +9,16 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
   },
+  "exports": {
+    ".": "./index.ts",
+    "./*": "./domains/*/index.ts"
+  },
+  "peerDependencies": {
+    "eslint-config": "workspace:*",
+    "typescript-config": "workspace:*",
+    "utils": "workspace:*"
+  },
   "dependencies": {
     "es-toolkit": "^1.44.0"
-  },
-  "devDependencies": {
-    "eslint-config": "workspace:*"
   }
 }

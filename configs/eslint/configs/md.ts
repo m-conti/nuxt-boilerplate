@@ -1,5 +1,5 @@
-import markdown from '@eslint/markdown';
 import { Linter } from 'eslint';
+import markdown from '@eslint/markdown';
 
 const mdRules = {};
 

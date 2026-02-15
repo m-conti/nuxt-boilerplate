@@ -7,6 +7,7 @@ envs/.env
 
 # Nuxt
 .nuxt
+.output
 
 # Misc
 .DS_Store

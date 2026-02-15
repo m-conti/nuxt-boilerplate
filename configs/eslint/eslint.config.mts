@@ -14,4 +14,11 @@ export default defineConfig([
   cssConfigs,
   mdConfigs,
   stylisticConfigs,
+  {
+    ignores: [
+      '**/dist/**',
+      '**/node_modules/**',
+      '**/.nuxt/**',
+    ],
+  },
 ]);

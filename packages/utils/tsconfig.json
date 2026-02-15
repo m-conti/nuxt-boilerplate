@@ -1,0 +1,14 @@
+{
+  // TypeScript configuration for utils package
+  "extends": [
+    "typescript-config/base",
+    "typescript-config/strict",
+    "typescript-config/library"
+  ],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "."
+  },
+  "include": ["./**/*"],
+  "exclude": ["node_modules", "dist"]
+}

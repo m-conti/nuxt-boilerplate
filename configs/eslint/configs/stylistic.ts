@@ -1,7 +1,7 @@
 import { Linter } from 'eslint';
 import stylistic, { StyleRules } from '@stylistic/eslint-plugin';
 
-const stylisticRules: StyleRules = {
+const stylisticRules: Linter.RulesRecord = {
   '@stylistic/array-bracket-spacing': ['error', 'never'],
   '@stylistic/arrow-parens': [
     'error',
@@ -287,7 +287,7 @@ const stylisticRules: StyleRules = {
     },
   ],
   '@stylistic/wrap-regex': ['error'],
-};
+} satisfies StyleRules;
 
 export const stylisticConfigs: Linter.Config[] = [
   {

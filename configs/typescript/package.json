@@ -1,0 +1,22 @@
+{
+  "name": "typescript-config",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "exports": {
+    ".": "./tsconfig.main.json",
+    "./*": "./configs/tsconfig.*.json"
+  },
+  "files": [
+    "tsconfig.main.json",
+    "configs/*.jsonc"
+  ],
+  "peerDependencies": {
+    "eslint-config": "workspace:*"
+  }
+}

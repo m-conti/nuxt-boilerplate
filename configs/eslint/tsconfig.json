@@ -1,0 +1,17 @@
+{
+  // TypeScript configuration for ESLint package
+  "extends": [
+    "typescript-config/base",
+    "typescript-config/library",
+    "typescript-config/strict"
+  ],
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "moduleResolution": "Node",
+    "skipLibCheck": false,
+    "types": [],
+    "emitDeclarationOnly": true
+  },
+  "include": ["./**/*"]
+}

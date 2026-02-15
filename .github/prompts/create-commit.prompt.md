@@ -1,5 +1,5 @@
 ---
-agent: ask
+agent: agent
 ---
 1. First, check git status to see what files have changed
 2. Review the diff to understand the changes
