@@ -130,18 +130,22 @@ const stylisticRules: Linter.RulesRecord = {
       ObjectExpression: {
         multiline: true,
         minProperties: 2,
+        consistent: true,
       },
       ObjectPattern: {
         multiline: true,
         minProperties: 2,
+        consistent: true,
       },
       ImportDeclaration: {
         multiline: true,
         minProperties: 2,
+        consistent: true,
       },
       ExportDeclaration: {
         multiline: true,
         minProperties: 2,
+        consistent: true,
       },
     },
   ],

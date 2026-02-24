@@ -1,0 +1,30 @@
+{
+  "name": "ui",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "typecheck": "nuxt typecheck"
+  },
+  "peerDependencies": {
+    "env-config": "workspace:*",
+    "eslint-config": "workspace:*",
+    "shared": "workspace:*",
+    "typescript-config": "workspace:*",
+    "utils": "workspace:*"
+  },
+  "dependencies": {
+    "@nuxt/image": "2.0.0",
+    "@nuxt/ui": "^4.5.0",
+    "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/storybook": "^9.0.1"
+  }
+}

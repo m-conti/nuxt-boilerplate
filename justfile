@@ -1,4 +1,4 @@
-APPLICATION_NAMES := `ls -d apps/*/ 2>/dev/null | xargs -n 1 basename`
+APPLICATION_NAMES := `ls -d apps/*/ 2>/dev/null | xargs -n 1 basename` + ' ui'
 
 default:
   @just --list
