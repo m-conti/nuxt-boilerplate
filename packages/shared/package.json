@@ -1,12 +1,8 @@
 {
-  "name": "main",
+  "name": "shared",
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -15,8 +11,11 @@
   "peerDependencies": {
     "eslint-config": "workspace:*",
     "typescript-config": "workspace:*",
-    "env-config": "workspace:*",
-    "utils": "workspace:*",
-    "shared": "workspace:*"
+    "utils": "workspace:*"
+  },
+  "dependencies": {
+    "nuxt": "^4.3.0",
+    "vue": "^3.5.27",
+    "vue-router": "^5.0.3"
   }
 }

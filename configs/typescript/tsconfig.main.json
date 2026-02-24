@@ -1,7 +1,6 @@
 {
   "extends": [
     "./configs/tsconfig.base.json",
-    "./configs/tsconfig.library.json",
     "./configs/tsconfig.strict.json",
     "./configs/tsconfig.nuxt.json"
   ]

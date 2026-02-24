@@ -15,9 +15,10 @@
     "allowJs": true,
 
     "verbatimModuleSyntax": false,
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": false,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": []
   },
   "exclude": [
     "**/node_modules",
